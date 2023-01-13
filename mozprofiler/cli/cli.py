@@ -1,4 +1,5 @@
 import argparse
+import os
 import sys
 import textwrap
 
@@ -19,6 +20,12 @@ class CommandLineInterface:
                 commands.__file__.split("/")[:-3],
             )
             storage.store({"moz-profiler-path": self.path})
+
+        try:
+            os.mkdir(f"{self.path}/.profiles")
+            storage.store({"profile-path": f"{self.path}/.profiles"})
+        except FileExistsError:
+            pass
 
     def __parse_args(self, argv: List[str]):
         self.main_parser = argparse.ArgumentParser(
