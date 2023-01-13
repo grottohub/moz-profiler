@@ -6,10 +6,10 @@ from datetime import datetime
 from importlib import import_module
 from types import ModuleType
 
-from applications.application import Application
-from applications.virtualenv import VirtualEnvironment
-from utils.storage import storage
-from utils.utils import load_rc_file_in_place, get_rc_file
+from mozprofiler.applications.application import Application
+from mozprofiler.applications.virtualenv import VirtualEnvironment
+from mozprofiler.utils.storage import storage
+from mozprofiler.utils.utils import load_rc_file_in_place, get_rc_file
 
 
 class MozPhabApplication(Application):

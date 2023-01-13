@@ -1,6 +1,6 @@
 import argparse
 
-from utils.helpers import generate_application
+from mozprofiler.utils.helpers import generate_application
 
 
 def attach(args: argparse.Namespace):

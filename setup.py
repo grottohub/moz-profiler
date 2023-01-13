@@ -5,7 +5,7 @@ setup(
     version="0.0.1",
     entry_points={
         "console_scripts": [
-            "moz-profiler=cli.cli:run"
+            "moz-profiler=mozprofiler.cli.cli:run"
         ],
     },
 )

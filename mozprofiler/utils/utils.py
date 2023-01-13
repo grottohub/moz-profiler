@@ -5,7 +5,7 @@ import fileinput
 
 from contextlib import contextmanager
 from pathlib import Path
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 
 def is_ignored(needle: str, ignore: List[str]) -> bool:

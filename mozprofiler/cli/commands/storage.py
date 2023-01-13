@@ -1,6 +1,6 @@
 import argparse
 
-from utils.storage import Storage
+from mozprofiler.utils.storage import Storage
 
 
 def storage(args: argparse.Namespace):

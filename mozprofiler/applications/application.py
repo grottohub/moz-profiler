@@ -1,7 +1,3 @@
-from pathlib import Path
-from typing import List, Optional
-
-
 class Application:
     def __init__(self, application_name: str, path: str, force_recreate: bool = False):
         self.name = application_name

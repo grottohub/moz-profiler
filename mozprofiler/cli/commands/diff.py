@@ -1,7 +1,7 @@
 import argparse
 
-from diff.diff import Diff
-from utils.storage import storage
+from mozprofiler.diff.diff import Diff
+from mozprofiler.utils.storage import storage
 
 
 def diff(args: argparse.Namespace):

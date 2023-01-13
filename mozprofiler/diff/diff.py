@@ -1,6 +1,5 @@
 import os
 import pstats
-import re
 
 from tabulate import tabulate
 

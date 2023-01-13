@@ -7,7 +7,7 @@ from . import commands
 from importlib import import_module
 from typing import List, Set
 
-from utils.storage import storage
+from mozprofiler.utils.storage import storage
 
 
 class CommandLineInterface:
@@ -51,7 +51,7 @@ class CommandLineInterface:
         commands_parser.required = True
 
         for command in commands.__all__:
-            module = import_module("cli.commands.{}".format(command))
+            module = import_module("mozprofiler.cli.commands.{}".format(command))
             add_parser = getattr(module, "add_parser", None)
             if callable(add_parser):
                 add_parser(commands_parser)

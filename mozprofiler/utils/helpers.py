@@ -1,8 +1,8 @@
 import os
 
-from applications.application import Application
-from applications.mozphab import MozPhabApplication
-from utils.storage import storage
+from mozprofiler.applications.application import Application
+from mozprofiler.applications.mozphab import MozPhabApplication
+from mozprofiler.utils.storage import storage
 
 
 def generate_application(application: str, force_recreate: bool) -> Application:
