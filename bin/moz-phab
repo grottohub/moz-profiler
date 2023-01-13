@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo "Note: executing via moz-profiler. To detach the profiler, run \`moz-profiler detach moz-phab\`."
+
+DOUBLE_DASH="--"
+SINGLE_DASH="-"
+
+# Replace standard argument signifiers with a different symbol so argparse
+# doesn't get confused.
+ARGS="${@//$SINGLE_DASH/+}"
+ARGS="${ARGS//$DOUBLE_DASH/+}"
+
+moz-profiler run moz-phab --args="$ARGS"
